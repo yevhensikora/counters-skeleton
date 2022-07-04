@@ -11,17 +11,17 @@ Proceed to `Task` class and implement its content.
   takes *a number of threads*, *a number of iterations* and *a number of milliseconds as a pause*.  
 
 * `public void compare()`  
-  * resets counters to `0`  
-  * creates and runs `numberOfThreades` threads  
-  * each thread does the following actions `numberOfIterations` times:  
+  * resets counters to `0`;  
+  * creates and runs `numberOfThreades` threads;  
+  * each thread performs the following actions `numberOfIterations` times:  
     * compares values of counters and prints out a _comparison result_ and _values of counters_, all are separated with a space character;  
     * increments the first counter;  
     * sleeps for `pause` milliseconds;  
-    * increments the second counter.  
+    * increments the second counter;  
   * all threads must be terminated before method ends.  
 
 * `public void compareSync()`  
-  does the same as the `compare` method but guarantees **the thread-safety**.
+  works as the `compare` method but guarantees **the thread-safety**.
 
 ### Notes
 
